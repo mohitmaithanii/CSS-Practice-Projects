@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body,
+html {
+	font-family: "Montserrat Alternates", sans-serif;
+	color: #ffffff;
+	background-color: #000000;
+	min-height: 100vh;
+	margin: 0;
+}
+
+header {
+	height: 60px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-bottom: 1px solid #c9c6c6;
+	font-weight: 600;
+	padding: 0 20px;
+}
+
+nav {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+ul {
+	display: flex;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+ul li a {
+	margin: 0 20px;
+	text-decoration: none;
+	padding: 2px 4px;
+	font-size: 14px;
+	color: #fff;
+	transition: color 0.2s ease;
+}
+
+li a:hover {
+	color: #c9c6c6;
+}
+
+button {
+	padding: 6px 16px;
+	font-size: 14px;
+	font-weight: 600;
+	outline: 0;
+	border: 0;
+	background-color: #fff;
+	cursor: pointer;
+	transition: background-color 0.2s ease;
+	border-top-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+
+button:hover {
+	background-color: #c9c6c6;
+}
+
+main {
+	background-image: url(./img/mercury-6153848_1280.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position-x: right;
+	display: flex;
+	align-items: center;
+	height: 90vh;
+	padding: 0 150px;
+	flex-wrap: wrap;
+}
+
+.content-left {
+	flex: 1;
+	font-size: 36px;
+	padding: 20px;
+}
+
+.content-right {
+	flex: 2;
+	font-size: 20px;
+	letter-spacing: 1px;
+	padding: 20px;
+}
+
+.content-right button {
+	margin-top: 20px;
+	padding: 12px 40px;
+	font-size: 18px;
+}
+
+.content-right span {
+	font-weight: bolder;
+}
+
+/* Media queries for responsiveness */
+
+@media (max-width: 768px) {
+	main {
+		padding: 0 50px;
+		background-position: center;
+		flex-direction: column;
+	}
+	.content-left {
+		font-size: 40px;
+		text-align: center;
+	}
+	.content-right {
+		font-size: 16px;
+		text-align: center;
+	}
+	ul li a {
+		display: none;
+	}
+}
+
+@media (max-width: 425px) {
+	main {
+		padding: 0 20px;
+		flex-direction: column;
+	}
+	.content-left {
+		font-size: 28px;
+	}
+	.content-right {
+		font-size: 12px;
+	}
+	ul {
+		flex-direction: column;
+		align-items: center;
+	}
+}
