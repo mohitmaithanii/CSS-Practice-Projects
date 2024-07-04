@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Anime.web</title>
+		<link
+			href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<!-- Navbar -->
+		<header
+			class="flex items-center justify-between w-full px-8 py-4 text-xs bg-white md:text-lg"
+		>
+			<!-- Logo -->
+			<span class="font-bold md:text-lg">アニメ</span>
+
+			<!-- Nav items -->
+			<nav>
+				<ul class="flex items-center gap-4 font-bold md:gap-10">
+					<li class="cursor-pointer hover:text-purple-600">
+						<a href="#">に関しては</a>
+					</li>
+					<li class="cursor-pointer hover:text-purple-600">
+						<a href="#">トレンド</a>
+					</li>
+					<li class="cursor-pointer hover:text-purple-600">
+						<a href="#">文字</a>
+					</li>
+					<li class="cursor-pointer hover:text-purple-600">
+						<a href="#">映画</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+
+		<!-- Main content -->
+		<main
+			class="flex flex-col items-center justify-center w-full h-screen px-6 py-4"
+		>
+			<div class="grid w-full h-full gap-3 md:grid-cols-10 md:grid-rows-4">
+				<!-- Artwork 1 -->
+				<div
+					class="flex items-center justify-center col-span-10 row-span-2 lg:col-span-4 lg:row-span-4 rounded-3xl md:col-span-5 md:row-span-4"
+				>
+					<img
+						class="object-cover w-full h-full rounded-3xl"
+						src="./img/monkey-d-luffy.jpg"
+						alt="Monkey D. Luffy from One Piece"
+					/>
+				</div>
+				<!-- Artwork 2 -->
+				<div
+					class="flex items-center justify-center col-span-10 row-span-2 lg:col-span-4 lg:row-span-2 rounded-3xl md:col-span-5 md:row-span-2"
+				>
+					<img
+						class="object-cover w-full h-full rounded-3xl"
+						src="./img/gojo.jpg"
+						alt="Gojo Satoru from Jujutsu Kaisen"
+					/>
+				</div>
+				<!-- Artwork 3 -->
+				<div
+					class="flex items-center justify-center col-span-10 row-span-2 lg:col-span-2 lg:row-span-2 rounded-3xl md:col-span-5 md:row-span-2"
+				>
+					<img
+						class="object-cover w-full h-full rounded-3xl"
+						src="./img/zenitsu.jpg"
+						alt="Zenitsu Agatsuma from Demon Slayer"
+					/>
+				</div>
+				<!-- Artwork 4 -->
+				<div
+					class="flex items-center justify-center col-span-10 row-span-2 lg:col-span-3 lg:row-span-2 rounded-3xl md:col-span-4 md:row-span-2"
+				>
+					<img
+						class="object-cover w-full h-full rounded-3xl"
+						src="./img/itachi-uchiha.jpg"
+						alt="Itachi Uchiha from Naruto"
+					/>
+				</div>
+				<!-- Artwork 5 -->
+				<div
+					class="flex items-center justify-center col-span-10 row-span-2 lg:col-span-3 lg:row-span-2 rounded-3xl md:col-span-6 md:row-span-2"
+				>
+					<img
+						class="object-cover w-full h-full rounded-3xl"
+						src="./img/bankai-bleach.jpg"
+						alt="Bleach Bankai"
+					/>
+				</div>
+			</div>
+		</main>
+	</body>
+</html>
